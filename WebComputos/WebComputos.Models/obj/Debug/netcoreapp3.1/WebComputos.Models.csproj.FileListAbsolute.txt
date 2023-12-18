@@ -1,0 +1,44 @@
+C:\Users\Alexis Hernandez\Documents\ProyectosWeb\WebComputos\WebComputos.Models\bin\Debug\netcoreapp3.1\WebComputos.Models.deps.json
+C:\Users\Alexis Hernandez\Documents\ProyectosWeb\WebComputos\WebComputos.Models\bin\Debug\netcoreapp3.1\WebComputos.Models.dll
+C:\Users\Alexis Hernandez\Documents\ProyectosWeb\WebComputos\WebComputos.Models\obj\Debug\netcoreapp3.1\WebComputos.Models.AssemblyInfoInputs.cache
+C:\Users\Alexis Hernandez\Documents\ProyectosWeb\WebComputos\WebComputos.Models\obj\Debug\netcoreapp3.1\WebComputos.Models.AssemblyInfo.cs
+C:\Users\Alexis Hernandez\Documents\ProyectosWeb\WebComputos\WebComputos.Models\obj\Debug\netcoreapp3.1\WebComputos.Models.csprojAssemblyReference.cache
+C:\Users\Alexis Hernandez\Documents\ProyectosWeb\WebComputos\WebComputos.Models\bin\Debug\netcoreapp3.1\WebComputos.Models.pdb
+C:\Users\Alexis Hernandez\Documents\ProyectosWeb\WebComputos\WebComputos.Models\obj\Debug\netcoreapp3.1\WebComputos.Models.dll
+C:\Users\Alexis Hernandez\Documents\ProyectosWeb\WebComputos\WebComputos.Models\obj\Debug\netcoreapp3.1\WebComputos.Models.pdb
+D:\Desktop\WebComputos\WebComputos.Models\bin\Debug\netcoreapp3.1\WebComputos.Models.deps.json
+D:\Desktop\WebComputos\WebComputos.Models\bin\Debug\netcoreapp3.1\WebComputos.Models.dll
+D:\Desktop\WebComputos\WebComputos.Models\bin\Debug\netcoreapp3.1\WebComputos.Models.pdb
+D:\Desktop\WebComputos\WebComputos.Models\obj\Debug\netcoreapp3.1\WebComputos.Models.csproj.CoreCompileInputs.cache
+D:\Desktop\WebComputos\WebComputos.Models\obj\Debug\netcoreapp3.1\WebComputos.Models.AssemblyInfoInputs.cache
+D:\Desktop\WebComputos\WebComputos.Models\obj\Debug\netcoreapp3.1\WebComputos.Models.AssemblyInfo.cs
+D:\Desktop\WebComputos\WebComputos.Models\obj\Debug\netcoreapp3.1\WebComputos.Models.dll
+D:\Desktop\WebComputos\WebComputos.Models\obj\Debug\netcoreapp3.1\WebComputos.Models.pdb
+D:\Desktop\WebComputos\WebComputos.Models\obj\Debug\netcoreapp3.1\WebComputos.Models.csprojAssemblyReference.cache
+C:\Users\UTIE-01\Desktop\WebComputos\WebComputos.Models\bin\Debug\netcoreapp3.1\WebComputos.Models.deps.json
+C:\Users\UTIE-01\Desktop\WebComputos\WebComputos.Models\bin\Debug\netcoreapp3.1\WebComputos.Models.dll
+C:\Users\UTIE-01\Desktop\WebComputos\WebComputos.Models\bin\Debug\netcoreapp3.1\WebComputos.Models.pdb
+C:\Users\UTIE-01\Desktop\WebComputos\WebComputos.Models\obj\Debug\netcoreapp3.1\WebComputos.Models.csprojAssemblyReference.cache
+C:\Users\UTIE-01\Desktop\WebComputos\WebComputos.Models\obj\Debug\netcoreapp3.1\WebComputos.Models.csproj.CoreCompileInputs.cache
+C:\Users\UTIE-01\Desktop\WebComputos\WebComputos.Models\obj\Debug\netcoreapp3.1\WebComputos.Models.AssemblyInfoInputs.cache
+C:\Users\UTIE-01\Desktop\WebComputos\WebComputos.Models\obj\Debug\netcoreapp3.1\WebComputos.Models.AssemblyInfo.cs
+C:\Users\UTIE-01\Desktop\WebComputos\WebComputos.Models\obj\Debug\netcoreapp3.1\WebComputos.Models.dll
+C:\Users\UTIE-01\Desktop\WebComputos\WebComputos.Models\obj\Debug\netcoreapp3.1\WebComputos.Models.pdb
+D:\Desktop\Respaldo MAnny 15-05\WebComputos\WebComputos.Models\bin\Debug\netcoreapp3.1\WebComputos.Models.deps.json
+D:\Desktop\Respaldo MAnny 15-05\WebComputos\WebComputos.Models\bin\Debug\netcoreapp3.1\WebComputos.Models.dll
+D:\Desktop\Respaldo MAnny 15-05\WebComputos\WebComputos.Models\bin\Debug\netcoreapp3.1\WebComputos.Models.pdb
+D:\Desktop\Respaldo MAnny 15-05\WebComputos\WebComputos.Models\obj\Debug\netcoreapp3.1\WebComputos.Models.csprojAssemblyReference.cache
+D:\Desktop\Respaldo MAnny 15-05\WebComputos\WebComputos.Models\obj\Debug\netcoreapp3.1\WebComputos.Models.csproj.CoreCompileInputs.cache
+D:\Desktop\Respaldo MAnny 15-05\WebComputos\WebComputos.Models\obj\Debug\netcoreapp3.1\WebComputos.Models.AssemblyInfoInputs.cache
+D:\Desktop\Respaldo MAnny 15-05\WebComputos\WebComputos.Models\obj\Debug\netcoreapp3.1\WebComputos.Models.AssemblyInfo.cs
+D:\Desktop\Respaldo MAnny 15-05\WebComputos\WebComputos.Models\obj\Debug\netcoreapp3.1\WebComputos.Models.dll
+D:\Desktop\Respaldo MAnny 15-05\WebComputos\WebComputos.Models\obj\Debug\netcoreapp3.1\WebComputos.Models.pdb
+D:\Desktop\26Medianoche\WebComputos\WebComputos.Models\bin\Debug\netcoreapp3.1\WebComputos.Models.deps.json
+D:\Desktop\26Medianoche\WebComputos\WebComputos.Models\bin\Debug\netcoreapp3.1\WebComputos.Models.dll
+D:\Desktop\26Medianoche\WebComputos\WebComputos.Models\bin\Debug\netcoreapp3.1\WebComputos.Models.pdb
+D:\Desktop\26Medianoche\WebComputos\WebComputos.Models\obj\Debug\netcoreapp3.1\WebComputos.Models.csprojAssemblyReference.cache
+D:\Desktop\26Medianoche\WebComputos\WebComputos.Models\obj\Debug\netcoreapp3.1\WebComputos.Models.csproj.CoreCompileInputs.cache
+D:\Desktop\26Medianoche\WebComputos\WebComputos.Models\obj\Debug\netcoreapp3.1\WebComputos.Models.AssemblyInfoInputs.cache
+D:\Desktop\26Medianoche\WebComputos\WebComputos.Models\obj\Debug\netcoreapp3.1\WebComputos.Models.AssemblyInfo.cs
+D:\Desktop\26Medianoche\WebComputos\WebComputos.Models\obj\Debug\netcoreapp3.1\WebComputos.Models.dll
+D:\Desktop\26Medianoche\WebComputos\WebComputos.Models\obj\Debug\netcoreapp3.1\WebComputos.Models.pdb

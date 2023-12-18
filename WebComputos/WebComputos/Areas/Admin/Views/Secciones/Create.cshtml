@@ -1,0 +1,88 @@
+﻿@model WebComputos.Models.ViewModels.SeccionVM
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br />
+<br />
+<br />
+<h3 class="text-center">Crear sección</h3>
+<form method="post" asp-action="Create">
+    <div class="row px-2 mx-2 border">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="col-10 offset-1 mt-4">
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="Seccion.seccion"></label>
+                </div>
+                <div class="col-4">
+                    <input asp-for="Seccion.seccion" class="form-control" />
+                    <span asp-validation-for="Seccion.seccion" class="text-danger"></span>
+                </div>
+                <div class="col-2">
+                    <label asp-for="Seccion.CabLocalidad"></label>
+                </div>
+                <div class="col-4">
+                    <input asp-for="Seccion.CabLocalidad" class="form-control" />
+                    <span asp-validation-for="Seccion.CabLocalidad" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="Seccion.Distrito"></label>
+                </div>
+                <div class="col-4">
+                    @Html.DropDownListFor(m => m.Seccion.Distrito, Model.LDistrito,
+                     "-Porfavor seleccione un distrito-", new { @class = "form-control" })
+                </div>
+                <div class="col-2">
+                    <label asp-for="Seccion.Municipio"></label>
+                </div>
+                <div class="col-4">
+                    @Html.DropDownListFor(m => m.Seccion.Municipio, Model.LMunicipio,
+                     "-Porfavor seleccione un distrito-", new { @class = "form-control" })
+                </div>
+            </div>
+            <div class="form-group row">
+
+                <div class="col-2">
+                    <label asp-for="Seccion.Demarcacion"></label>
+                </div>
+                <div class="col-4">
+                    @Html.DropDownListFor(m => m.Seccion.Demarcacion, Model.LDemarcacion,
+                     "-Porfavor seleccione una demarcación-", new { @class = "form-control" })
+                </div>
+
+                <div class="col-2">
+                    <label asp-for="Seccion.PElectoral"></label>
+                </div>
+                <div class="col-4">
+                    <input type="number" asp-for="Seccion.PElectoral" class="form-control" />
+                    <span asp-validation-for="Seccion.PElectoral" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="Seccion.ListadoNominal"></label>
+                </div>
+                <div class="col-4">
+                    <input type="number" asp-for="Seccion.ListadoNominal" class="form-control" />
+                    <span asp-validation-for="Seccion.ListadoNominal" class="text-danger"></span>
+                </div>
+                <div class="col-2">
+                    <label asp-for="Seccion.Activo"></label>
+                </div>
+                <div class="col-4">
+                    <input asp-for="Seccion.Activo" class="form-check" />
+                    <span asp-validation-for="Seccion.Activo" class="text-danger"></span>
+                </div>
+
+            </div>
+            <div class="form-group row">
+                <div class="col-8 offset-4">
+                    <partial name="_GuardarVolver" />
+                </div>
+            </div>
+        </div>
+    </div>  
+</form>

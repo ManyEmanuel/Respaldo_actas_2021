@@ -1,0 +1,76 @@
+﻿@model WebComputos.Models.TPartidos
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br />
+<br />
+<h3 class="text-center">Crear nuevo partido</h3>
+<form method="post" asp-action="Create" enctype="multipart/form-data">
+    <div class="row px-2 mx-2 border">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="col-10 offset-1 mt-4">
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="Nombre"></label>
+                </div>
+                <div class="col-10">
+                    <input asp-for="Nombre" class="form-control" />
+                    <span asp-validation-for="Nombre" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="Siglas"></label>
+                </div>
+                <div class="col-4">
+                    <input asp-for="Siglas" class="form-control" />
+                    <span asp-validation-for="Siglas" class="text-danger"></span>
+                </div>
+                <div class="col-2">
+                    <label asp-for="Independiente"></label>
+                </div>
+                <div class="col-4">
+                    <input type="checkbox" class="form-check" />
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="Prioridad"></label>
+                </div>
+                <div class="col-4">
+                    <input asp-for="Prioridad" class="form-control" />
+                    <span asp-validation-for="Prioridad" class="text-danger"></span>
+                </div>
+                <div class="col-2">
+                    <label asp-for="LogoURL"></label>
+                </div>
+                <div class="col-4">
+                    <input type="file" name="arhivos" id="SubidaArchivo" class="form-control" />
+                </div>
+
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="PantoneL"></label>
+                </div>
+                <div class="col-4">
+                    <input type="color" asp-for="PantoneL" class="form-control" />
+                    <span asp-validation-for="PantoneL" class="text-danger"></span>
+                </div>
+                <div class="col-2">
+                    <label asp-for="PantoneF"></label>
+                </div>
+                <div class="col-4">
+                    <input type="color" asp-for="PantoneF" class="form-control" />
+                    <span asp-validation-for="PantoneF" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-8 offset-4">
+                    <partial name="_GuardarVolver" />
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

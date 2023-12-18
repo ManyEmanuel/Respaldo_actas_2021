@@ -1,0 +1,62 @@
+﻿@model WebComputos.Models.TResultadosActas
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>TResultadosActas</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="IdResultadoActa" />
+            <div class="form-group">
+                <label asp-for="IdPartido" class="control-label"></label>
+                <input asp-for="IdPartido" class="form-control" />
+                <span asp-validation-for="IdPartido" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdCoalicion" class="control-label"></label>
+                <input asp-for="IdCoalicion" class="form-control" />
+                <span asp-validation-for="IdCoalicion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdCombinacion" class="control-label"></label>
+                <input asp-for="IdCombinacion" class="form-control" />
+                <span asp-validation-for="IdCombinacion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nulos" class="control-label"></label>
+                <input asp-for="Nulos" class="form-control" />
+                <span asp-validation-for="Nulos" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Total" class="control-label"></label>
+                <input asp-for="Total" class="form-control" />
+                <span asp-validation-for="Total" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VotosRegistrados" class="control-label"></label>
+                <input asp-for="VotosRegistrados" class="form-control" />
+                <span asp-validation-for="VotosRegistrados" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdActa" class="control-label"></label>
+                <select asp-for="IdActa" class="form-control" asp-items="ViewBag.IdActa"></select>
+                <span asp-validation-for="IdActa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

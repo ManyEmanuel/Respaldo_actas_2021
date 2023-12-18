@@ -1,0 +1,112 @@
+﻿@model WebComputos.Models.ViewModels.CandidatosVM
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br />
+<br />
+<br />
+<h3 class="text-center">Crear candidato</h3>
+<form method="post" asp-action="Create">
+    <div class="row px-2 mx-2 border">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="col-10 offset-1 mt-4">
+            <div class="form-group row">
+                <div class="col-1">
+                    <label asp-for="Candidato.Nombres"></label>
+                </div>
+                <div class="col-3">
+                    <input asp-for="Candidato.Nombres" class="form-control" />
+                    <span asp-validation-for="Candidato.Nombres" class="text-danger"></span>
+                </div>
+                <div class="col-1">
+                    <label asp-for="Candidato.ApellidoPat"></label>
+                </div>
+                <div class="col-3">
+                    <input asp-for="Candidato.ApellidoPat" class="form-control" />
+                    <span asp-validation-for="Candidato.ApellidoPat" class="text-danger"></span>
+                </div>
+                <div class="col-1">
+                    <label asp-for="Candidato.ApellidoMat"></label>
+                </div>
+                <div class="col-3">
+                    <input asp-for="Candidato.ApellidoMat" class="form-control" />
+                    <span asp-validation-for="Candidato.ApellidoMat" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="Candidato.Mote"></label>
+                </div>
+                <div class="col-4">
+                    <input asp-for="Candidato.Mote" class="form-control" />
+                    <span asp-validation-for="Candidato.Mote" class="text-danger"></span>
+                </div>
+                <div class="col-2">
+                    <label asp-for="Candidato.TipoEleccion"></label>
+                </div>
+                <div class="col-4">
+                    @Html.DropDownListFor(m => m.Candidato.TipoEleccion, Model.LTipoEleccion,
+                      "-Por favor seleccione una tipo de elección-", new { @class = "form-control" })
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="Candidato.Municipio"></label>
+                </div>
+                <div class="col-4">
+                    @Html.DropDownListFor(m => m.Candidato.Municipio, Model.Lmunicipio,
+                      "-Por favor seleccione un municipio-", new { @class = "form-control" })
+                </div>
+                <div class="col-2">
+                    <label asp-for="Candidato.Distrito"></label>
+                </div>
+                <div class="col-4">
+                    @Html.DropDownListFor(m => m.Candidato.Distrito, Model.LDistrito,
+                      "-Por favor seleccione un distrito-", new { @class = "form-control" })
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="Candidato.Demarcacion"></label>
+                </div>
+                <div class="col-4">
+                    @Html.DropDownListFor(m => m.Candidato.Demarcacion, Model.LDemarcacion,
+                      "-Por favor seleccione una demarcación-", new { @class = "form-control" })
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="Candidato.Coalicion"></label>
+                </div>
+                <div class="col-4">
+                    @Html.DropDownListFor(m => m.Candidato.Partido, Model.LPartido,
+                      "-Por favor seleccione un coalición-", new { @class = "form-control" })
+                </div>
+                <div class="col-2">
+                    <label asp-for="Candidato.EsCoalicion"></label>
+                </div>
+                <div class="col-4">
+                    <input type="checkbox" asp-for="Candidato.EsCoalicion" class="form-check" />
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="Candidato.Activo"></label>
+                </div>
+                <div class="col-4">
+                    <input type="checkbox" asp-for="Candidato.EsCoalicion" class="form-check" />
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-8 offset-4">
+                    <partial name="_GuardarVolver" />
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+

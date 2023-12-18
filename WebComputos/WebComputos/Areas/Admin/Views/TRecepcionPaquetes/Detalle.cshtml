@@ -1,0 +1,121 @@
+﻿@model WebComputos.Models.ViewModels.RegPaqueteVM
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <div class="row px-2 mx-2 border">
+        <div class="col-10 offset-1 mt-4">
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="RecPaquetes.Hora"> Hora de recepción</label>
+                </div>
+                <div class="col-4">
+                    <input type="time" asp-for="RecPaquetes.Hora" class="form-control" disabled />
+                </div>
+                <div class="col-2">
+                    <label asp-for="RecPaquetes.Fecha"> Fecha de recepción</label>
+                </div>
+                <div class="col-4">
+                    <input type="date" id="fini" asp-for="RecPaquetes.Fecha" class="form-control" disabled />
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-5">
+                    <label asp-for="RecPaquetes.Entrega" class="control-label">Persona que hace entrega del paquete electoral</label>
+                </div>
+                <div class=" col-7">
+                    <input asp-for="RecPaquetes.Entrega" class="form-control" disabled />
+                    <span asp-validation-for="RecPaquetes.Entrega" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-5">
+                    <label asp-for="RecPaquetes.Cargo" class="control-label">Cargo/Puesto de quien entrega</label>
+                </div>
+                <div class="col-7">
+                    <input asp-for="RecPaquetes.Cargo" class="form-control" disabled />
+                    <span asp-validation-for="RecPaquetes.Cargo" class="text-danger"></span>
+                </div>
+            </div>
+            <br />
+            <br />
+
+            <!-- Check de observaciones -->
+            <div class="form-group row">
+                <label class="control-label">El paquete electoral se entregó: (Seleccione las condiciones del paquete al recibirlo)</label>
+            </div>
+            <div class="form-group row">
+                <div class="col-6">
+                    <input type="radio" id="obs1" name="obs" value="1" class="form-check-input" asp-for="RecPaquetes.Observaciones" disabled />
+                    <label for="obs1" class="form-check-label"> Sin muestras de alteración, firmado y con cinta de seguridad</label>
+                </div>
+                <div class="col-6">
+                    <input type="radio" id="obs4" name="obs" value="4" class="form-check-input" asp-for="RecPaquetes.Observaciones" disabled />
+                    <label for="obs4" class="form-check-label">Sin muestras de alteración y sin firmas</label>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-6">
+                    <input type="radio" id="obs2" name="obs" value="2" class="form-check-input" asp-for="RecPaquetes.Observaciones" disabled />
+                    <label for="obs2" class="form-check-label"> Sin muestras de alteración, firmado y sin cinta de seguridad</label>
+                </div>
+                <div class="col-6">
+                    <input type="radio" id="obs5" name="obs" value="5" class="form-check-input" asp-for="RecPaquetes.Observaciones" disabled />
+                    <label for="obs5" class="form-check-label"> Con muestras de alteración y sin firmas</label>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-6">
+                    <input type="radio" id="obs3" name="obs" value="3" class="form-check-input" asp-for="RecPaquetes.Observaciones" disabled />
+                    <label for="obs3" class="form-check-label"> Con muestras de alteración y firmado</label>
+                </div>
+            </div>
+            <br />
+            <br />
+
+            <!-- ---------------------------------------------------------------------------------------- -->
+            <!-- Check de Sobre y Paquete PREP -->
+            <div class="form-group row">
+                <div class="col-6">
+                    <label class="control-label">Por fuera del paquete electoral se recibieron: </label>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-6">
+                    <label class="control-label">Un sobre para el PREP </label>
+                </div>
+                <div class="col-6">
+                    <label class="control-label">Una bolsa que va por fuera del paquete electoral para el consejo municipal </label>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <input id="Sobre1" type="radio" name="Sobre" value="1" asp-for="RecPaquetes.SobrePrep" disabled />
+                    <label for="Sobre1" class="form-check-label"> Si</label>
+                </div>
+                <div class="col-4">
+                    <input id="Sobre2" type="radio" name="Sobre" value="0" asp-for="RecPaquetes.SobrePrep" disabled />
+                    <label for="Sobre2" class="form-check-label"> No</label>
+                </div>
+                <div class="col-2">
+                    <input id="Paq1" type="radio" name="Paquete" value="1" asp-for="RecPaquetes.SobrePrep" disabled />
+                    <label for="Paq1" class="form-check-label"> Si</label>
+                </div>
+                <div class="col-4">
+                    <input id="Paq2" type="radio" name="Paquete" value="0" asp-for="RecPaquetes.SobrePrep" disabled />
+                    <label for="Paq2" class="form-check-label"> No</label>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+    <br />
+    <div class="form-group row">
+        <div class="col-3">
+            <a asp-action="Index" class="btn btn-danger form-control">Volver</a>
+        </div>
+    </div>

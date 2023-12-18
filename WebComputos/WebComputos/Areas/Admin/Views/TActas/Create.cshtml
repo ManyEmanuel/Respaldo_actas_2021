@@ -1,0 +1,186 @@
+﻿@model WebComputos.Models.ViewModels.ActasVM
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@section Scripts
+{
+    <script src="~/js/ActasVP.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#grupoTablas").tabs();
+        });
+    </script>
+}
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+<br />
+<br />
+<br />
+<h3 class="text-center">Registrar actas</h3>
+
+
+<div id="grupoTablas">
+    <ul>
+        <li><a href="#tab-1">Gobernador</a></li>
+        <li><a href="#tab-2">Presidente y Síndico</a></li>
+        <li><a href="#tab-3">Diputados</a></li>
+        <li><a href="#tab-4">Regidores</a></li>
+    </ul>
+    <div id="tab-1">
+        <p align="center">Actas de Gobernador</p>
+        <div class="col-10 offset-1 mt-4">
+            <form method="post" asp-action="Create">
+                <div class="form-group row">
+                    <div class="col-2">
+                        <label for="Seccion1">Sección:</label>
+                    </div>
+                    <div class="col-4">
+                        @Html.DropDownListFor(m => m.LSeccionGob, Model.LSeccionGob,
+                        "-Seleccione una sección-", new { @class = "form-control", @id = "Seccion1" })
+                    </div>
+                    <div class="col-2">
+                        <label for="casid1">Casilla:</label>
+                    </div>
+                    <div class="col-4">
+                        <select id="casid1" name="casid"  asp-items='@(new SelectList(string.Empty,"value","text"))' class="form-control"></select>
+                    </div>
+                </div>
+                <partial name="_ActasCreate" />
+                <div class="row">
+                    <div class="col">
+                        <button type="submit" id="Guardar1" class="btn btn-success form-control">Siguiente</button>
+                        &nbsp;
+                    </div>
+                    <div class="col">
+                        <a asp-action="Index" class="btn btn-danger form-control">Volver a lista</a>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="hidden" id="cmb1" class="form-control" value="1" placeholder="1" />
+                    <input type="hidden" id="idres1" asp-for="Actas.IdDetalleActa"  />
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="tab-2">
+        <p align="center">Actas de Presidente y Síndico</p>
+        <div class="col-10 offset-1 mt-4">
+            <form method="post" asp-action="Create">
+                <div class="form-group row">
+                    <div class="col-2">
+                        <label for="Seccion2">Sección:</label>
+                    </div>
+                    <div class="col-4">
+                        @Html.DropDownListFor(m => m.LSeccionPys, Model.LSeccionPys,
+                        "-Seleccione una sección-", new { @class = "form-control", @id = "Seccion2" })
+                    </div>
+                    <div class="col-2">
+                        <label for="casid2">Casilla:</label>
+                    </div>
+                    <div class="col-4">
+                        <select id="casid2" name="casid" asp-items='@(new SelectList(string.Empty,"value","text"))' class="form-control"></select>
+                    </div>
+                </div>
+                <partial name="_ActasCreate" />
+                <div class="row">
+                    <div class="col">
+                        <button type="submit" id="Guardar2" class="btn btn-success form-control">Siguiente</button>
+                        &nbsp;
+                    </div>
+                    <div class="col">
+                        <a asp-action="Index" class="btn btn-danger form-control">Volver a lista</a>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="hidden" id="cmb2" class="form-control" value="2" placeholder="2" />
+                    <input type="hidden" id="idres2" asp-for="Actas.IdDetalleActa" />
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="tab-3">
+        <p align="center">Actas de Diputados</p>
+        <div class="col-10 offset-1 mt-4">
+            <form method="post" asp-action="Create">
+                <div class="form-group row">
+                    <div class="col-2">
+                        <label for="Seccion3">Sección:</label>
+                    </div>
+                    <div class="col-4">
+                        @Html.DropDownListFor(m => m.LSeccionDip, Model.LSeccionDip,
+                        "-Seleccione una sección-", new { @class = "form-control", @id = "Seccion3" })
+                    </div>
+                    <div class="col-2">
+                        <label for="casid3">Casilla:</label>
+                    </div>
+                    <div class="col-4">
+                        <select id="casid3" name="casid" asp-items='@(new SelectList(string.Empty,"value","text"))' class="form-control"></select>
+                    </div>
+                </div>
+                <partial name="_ActasCreate" />
+                <div class="row">
+                    <div class="col">
+                        <button type="submit" id="Guardar3" class="btn btn-success form-control">Siguiente</button>
+                        &nbsp;
+                    </div>
+                    <div class="col">
+                        <a asp-action="Index" class="btn btn-danger form-control">Volver a lista</a>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="hidden" id="cmb3" class="form-control" value="3" placeholder="3" />
+                    <input type="hidden" id="idres3" asp-for="Actas.IdDetalleActa"/>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <div id="tab-4">
+        <p align="center">Actas de Regidores</p>
+        <div class="col-10 offset-1 mt-4">
+            <form method="post" asp-action="Create">
+                <div class="form-group row">
+                    <div class="col-2">
+                        <label for="Seccion4">Sección:</label>
+                    </div>
+                    <div class="col-4">
+                        @Html.DropDownListFor(m => m.LSeccionReg, Model.LSeccionReg,
+                        "-Seleccione una sección-", new { @class = "form-control", @id = "Seccion4" })
+                    </div>
+                    <div class="col-2">
+                        <label for="casid4">Casilla:</label>
+                    </div>
+                    <div class="col-4">
+                        <select id="casid4" name="casid" asp-items='@(new SelectList(string.Empty,"value","text"))' class="form-control"></select>
+                    </div>
+                </div>
+                <partial name="_ActasCreate" />
+
+                <div class="row">
+                    <div class="col">
+                        <button type="submit" id="Guardar4" class="btn btn-success form-control">Siguiente</button>
+                        &nbsp;
+                    </div>
+                    <div class="col">
+                        <a asp-action="Index" class="btn btn-danger form-control">Volver a lista</a>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="hidden" id="cmb4" class="form-control" value="4" placeholder="4" />
+                    <input type="hidden" id="idres4" asp-for="Actas.IdDetalleActa" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+

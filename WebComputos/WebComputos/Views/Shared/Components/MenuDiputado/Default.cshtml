@@ -1,0 +1,27 @@
+﻿@model WebComputos.Models.ViewModels.MenuDinamicoVM
+
+@if (Model.LDistrito.Count() > 0)
+{
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Causales de Recuento
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+
+            <li><a class="dropdown-item" asp-area="Admin" asp-controller="TRecepcionPaquetes" asp-action="CausalesGob"> Gobernador</a></li>
+            <li><a class="dropdown-item" asp-area="Admin" asp-controller="TRecepcionPaquetes" asp-action="CausalesPys"> Presidente y Síndico</a></li>
+            <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="#">Diputados</a>
+
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    @foreach (var item in Model.LDistrito)
+                    {
+                        <li><a class="dropdown-item" asp-area="Admin" asp-controller="TRecepcionPaquetes" asp-action="CausalesDip" asp-route-id="@item.Value"> Distrito @item.Value</a></li>
+                    }
+                </ul>
+            </li>
+            @await Component.InvokeAsync("MenuDinamico")
+        </ul>
+    </li>
+    
+}

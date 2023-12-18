@@ -1,0 +1,101 @@
+﻿@model WebComputos.Models.ViewModels.TResultadosActasVM
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<h4>TResultadosActas</h4>
+<hr />
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <h2 class="text-primary">Captura de Votos</h2>
+        </div>
+
+    </div>
+    <br />
+    <br />
+    <table id="tblVotos" class="table table-striped table-bordered " style="width:100%">
+        <thead>
+            <tr>
+                <th>Actor Politico</th>
+                <th>Total Votos</th>
+            </tr>
+        </thead>
+
+    </table>
+    <table id="tblVotos1" class="table table-striped table-bordered " style="width:100%">
+        
+        <tfoot>
+            <tr>
+                <td>Votos Nulos</td>
+                <td><input type="text" /></td>
+            </tr>
+            <tr>
+                <td>Total de Votos</td>
+                <td><input type="text" /></td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+</div>
+
+
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Resultados.IdPartido" class="control-label"></label>
+                <input asp-for="Resultados.IdPartido" class="form-control" />
+                <span asp-validation-for="Resultados.IdPartido" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Resultados.IdCoalicion" class="control-label"></label>
+                <input asp-for="Resultados.IdCoalicion" class="form-control" />
+                <span asp-validation-for="Resultados.IdCoalicion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Resultados.IdCombinacion" class="control-label"></label>
+                <input asp-for="Resultados.IdCombinacion" class="form-control" />
+                <span asp-validation-for="Resultados.IdCombinacion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Resultados.Nulos" class="control-label"></label>
+                <input asp-for="Resultados.Nulos" class="form-control" />
+                <span asp-validation-for="Resultados.Nulos" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Resultados.Total" class="control-label"></label>
+                <input asp-for="Resultados.Total" class="form-control" />
+                <span asp-validation-for="Resultados.Total" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Resultados.VotosRegistrados" class="control-label"></label>
+                <input asp-for="Resultados.VotosRegistrados" class="form-control" />
+                <span asp-validation-for="Resultados.VotosRegistrados" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Resultados.IdActa" class="control-label"></label>
+                <select asp-for="Resultados.IdActa" class="form-control" asp-items="ViewBag.IdActa"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts
+{
+    <script src="~/js/Resultados.js"></script>
+}

@@ -1,0 +1,88 @@
+﻿@model WebComputos.Models.ViewModels.ActasVM
+
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+<div class="form-group row">
+    <div class="col-6">
+        <label for="est">Estatus en la que se recibió el acta:</label>
+    </div>
+    <div class="col-6">
+        @Html.DropDownListFor(m => m.Actas.Estatus, Model.LEstatusActa,
+        "-Estatus del acta-", new { @id ="est", @class = "form-control" })
+    </div>
+</div>
+<div class="form-group row">
+    <div class="col-10">
+        <label asp-for="Actas.Sobrantes" class="control-label">[1] Boletas sobrantes de la elección:</label>
+    </div>
+    <div class="col-2">
+        <input asp-for="Actas.Sobrantes" class="form-control" />
+        <span asp-validation-for="Actas.Sobrantes" class="text-danger"></span>
+    </div>
+</div>
+<div class="form-group row">
+    <div class="col-10">
+        <label asp-for="Actas.VotosCiu" class="control-label">[2] Personas que votaron:</label>
+    </div>
+    <div class="col-2">
+        <input asp-for="Actas.VotosCiu" class="form-control" />
+        <span asp-validation-for="Actas.VotosCiu" class="text-danger"></span>
+    </div>
+</div>
+<div class="form-group row">
+    <div class="col-10">
+        <label asp-for="Actas.VotosRep" class="control-label">[3] Representantes de partidos políticos y de candidatos/as independientes que votaron en la casilla no incluidos/as en la lista nominal:</label>
+    </div>
+    <div class="col-2">
+        <input asp-for="Actas.VotosRep" class="form-control" />
+        <span asp-validation-for="Actas.VotosRep" class="text-danger"></span>
+    </div>
+</div>
+
+<div class="form-group row">
+    <div class="col-10">
+        <label asp-for="Actas.TotalVotos" class="control-label">[4] Suma de las cantidades de los apartados [2] y [3]:</label>
+    </div>
+    <div class="col-2">
+        <input asp-for="Actas.TotalVotos" class="form-control" />
+        <span asp-validation-for="Actas.TotalVotos" class="text-danger"></span>
+    </div>
+</div>
+<div class="form-group row">
+    <div class="col-10">
+        <label asp-for="Actas.VotosUrnas" class="control-label">[5] Votos de la elección sacados de la urna:</label>
+    </div>
+    <div class="col-2">
+        <input asp-for="Actas.VotosUrnas" class="form-control" />
+        <span asp-validation-for="Actas.VotosUrnas" class="text-danger"></span>
+    </div>
+</div>
+<div class="form-group row">
+    <div class="col-6">
+        <label class="control-label">¿Se presentaron incidentes durante el escrutinio y cómputo de la elección?</label>
+    </div>
+    <div class="col-6">
+        <label class="control-label">Describa brevemente</label>
+    </div>
+</div>
+<div class="form-group row">
+    <div class="col-2">
+        <input id="inci1" type="radio" name="Chein" value="True" />
+        <label for="inci1" class="form-check-label"> Si</label>
+    </div>
+    <div class="col-4">
+        <input id="inci2" type="radio" name="Chein" value="False" />
+        <label for="inci2" class="form-check-label"> No</label>
+    </div>
+    <div class="col-6">
+        <input type="text" id="Descri2" asp-for="Actas.DesIncidentes" class="form-control" />
+    </div>
+</div>
+
+<div class="col-2">
+    <input type="hidden" asp-for="Actas.Incidentes" class="form-control" id="incidente" />
+    <span asp-validation-for="Actas.Incidentes" class="text-danger"></span>
+</div>
+
+
+

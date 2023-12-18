@@ -1,0 +1,44 @@
+C:\Users\Alexis Hernandez\Documents\ProyectosWeb\WebComputos\WebComputos.Utilerias\bin\Debug\netcoreapp3.1\WebComputos.Utilerias.deps.json
+C:\Users\Alexis Hernandez\Documents\ProyectosWeb\WebComputos\WebComputos.Utilerias\bin\Debug\netcoreapp3.1\WebComputos.Utilerias.dll
+C:\Users\Alexis Hernandez\Documents\ProyectosWeb\WebComputos\WebComputos.Utilerias\bin\Debug\netcoreapp3.1\WebComputos.Utilerias.pdb
+C:\Users\Alexis Hernandez\Documents\ProyectosWeb\WebComputos\WebComputos.Utilerias\obj\Debug\netcoreapp3.1\WebComputos.Utilerias.AssemblyInfoInputs.cache
+C:\Users\Alexis Hernandez\Documents\ProyectosWeb\WebComputos\WebComputos.Utilerias\obj\Debug\netcoreapp3.1\WebComputos.Utilerias.AssemblyInfo.cs
+C:\Users\Alexis Hernandez\Documents\ProyectosWeb\WebComputos\WebComputos.Utilerias\obj\Debug\netcoreapp3.1\WebComputos.Utilerias.dll
+C:\Users\Alexis Hernandez\Documents\ProyectosWeb\WebComputos\WebComputos.Utilerias\obj\Debug\netcoreapp3.1\WebComputos.Utilerias.pdb
+C:\Users\Alexis Hernandez\Documents\ProyectosWeb\WebComputos\WebComputos.Utilerias\obj\Debug\netcoreapp3.1\WebComputos.Utilerias.csprojAssemblyReference.cache
+D:\Desktop\WebComputos\WebComputos.Utilerias\bin\Debug\netcoreapp3.1\WebComputos.Utilerias.deps.json
+D:\Desktop\WebComputos\WebComputos.Utilerias\bin\Debug\netcoreapp3.1\WebComputos.Utilerias.dll
+D:\Desktop\WebComputos\WebComputos.Utilerias\bin\Debug\netcoreapp3.1\WebComputos.Utilerias.pdb
+D:\Desktop\WebComputos\WebComputos.Utilerias\obj\Debug\netcoreapp3.1\WebComputos.Utilerias.csproj.CoreCompileInputs.cache
+D:\Desktop\WebComputos\WebComputos.Utilerias\obj\Debug\netcoreapp3.1\WebComputos.Utilerias.AssemblyInfoInputs.cache
+D:\Desktop\WebComputos\WebComputos.Utilerias\obj\Debug\netcoreapp3.1\WebComputos.Utilerias.AssemblyInfo.cs
+D:\Desktop\WebComputos\WebComputos.Utilerias\obj\Debug\netcoreapp3.1\WebComputos.Utilerias.dll
+D:\Desktop\WebComputos\WebComputos.Utilerias\obj\Debug\netcoreapp3.1\WebComputos.Utilerias.pdb
+D:\Desktop\WebComputos\WebComputos.Utilerias\obj\Debug\netcoreapp3.1\WebComputos.Utilerias.csprojAssemblyReference.cache
+C:\Users\UTIE-01\Desktop\WebComputos\WebComputos.Utilerias\bin\Debug\netcoreapp3.1\WebComputos.Utilerias.deps.json
+C:\Users\UTIE-01\Desktop\WebComputos\WebComputos.Utilerias\bin\Debug\netcoreapp3.1\WebComputos.Utilerias.dll
+C:\Users\UTIE-01\Desktop\WebComputos\WebComputos.Utilerias\bin\Debug\netcoreapp3.1\WebComputos.Utilerias.pdb
+C:\Users\UTIE-01\Desktop\WebComputos\WebComputos.Utilerias\obj\Debug\netcoreapp3.1\WebComputos.Utilerias.csprojAssemblyReference.cache
+C:\Users\UTIE-01\Desktop\WebComputos\WebComputos.Utilerias\obj\Debug\netcoreapp3.1\WebComputos.Utilerias.AssemblyInfoInputs.cache
+C:\Users\UTIE-01\Desktop\WebComputos\WebComputos.Utilerias\obj\Debug\netcoreapp3.1\WebComputos.Utilerias.AssemblyInfo.cs
+C:\Users\UTIE-01\Desktop\WebComputos\WebComputos.Utilerias\obj\Debug\netcoreapp3.1\WebComputos.Utilerias.dll
+C:\Users\UTIE-01\Desktop\WebComputos\WebComputos.Utilerias\obj\Debug\netcoreapp3.1\WebComputos.Utilerias.pdb
+C:\Users\UTIE-01\Desktop\WebComputos\WebComputos.Utilerias\obj\Debug\netcoreapp3.1\WebComputos.Utilerias.csproj.CoreCompileInputs.cache
+D:\Desktop\Respaldo MAnny 15-05\WebComputos\WebComputos.Utilerias\bin\Debug\netcoreapp3.1\WebComputos.Utilerias.deps.json
+D:\Desktop\Respaldo MAnny 15-05\WebComputos\WebComputos.Utilerias\bin\Debug\netcoreapp3.1\WebComputos.Utilerias.dll
+D:\Desktop\Respaldo MAnny 15-05\WebComputos\WebComputos.Utilerias\bin\Debug\netcoreapp3.1\WebComputos.Utilerias.pdb
+D:\Desktop\Respaldo MAnny 15-05\WebComputos\WebComputos.Utilerias\obj\Debug\netcoreapp3.1\WebComputos.Utilerias.csprojAssemblyReference.cache
+D:\Desktop\Respaldo MAnny 15-05\WebComputos\WebComputos.Utilerias\obj\Debug\netcoreapp3.1\WebComputos.Utilerias.csproj.CoreCompileInputs.cache
+D:\Desktop\Respaldo MAnny 15-05\WebComputos\WebComputos.Utilerias\obj\Debug\netcoreapp3.1\WebComputos.Utilerias.AssemblyInfoInputs.cache
+D:\Desktop\Respaldo MAnny 15-05\WebComputos\WebComputos.Utilerias\obj\Debug\netcoreapp3.1\WebComputos.Utilerias.AssemblyInfo.cs
+D:\Desktop\Respaldo MAnny 15-05\WebComputos\WebComputos.Utilerias\obj\Debug\netcoreapp3.1\WebComputos.Utilerias.dll
+D:\Desktop\Respaldo MAnny 15-05\WebComputos\WebComputos.Utilerias\obj\Debug\netcoreapp3.1\WebComputos.Utilerias.pdb
+D:\Desktop\26Medianoche\WebComputos\WebComputos.Utilerias\bin\Debug\netcoreapp3.1\WebComputos.Utilerias.deps.json
+D:\Desktop\26Medianoche\WebComputos\WebComputos.Utilerias\bin\Debug\netcoreapp3.1\WebComputos.Utilerias.dll
+D:\Desktop\26Medianoche\WebComputos\WebComputos.Utilerias\bin\Debug\netcoreapp3.1\WebComputos.Utilerias.pdb
+D:\Desktop\26Medianoche\WebComputos\WebComputos.Utilerias\obj\Debug\netcoreapp3.1\WebComputos.Utilerias.csprojAssemblyReference.cache
+D:\Desktop\26Medianoche\WebComputos\WebComputos.Utilerias\obj\Debug\netcoreapp3.1\WebComputos.Utilerias.csproj.CoreCompileInputs.cache
+D:\Desktop\26Medianoche\WebComputos\WebComputos.Utilerias\obj\Debug\netcoreapp3.1\WebComputos.Utilerias.AssemblyInfoInputs.cache
+D:\Desktop\26Medianoche\WebComputos\WebComputos.Utilerias\obj\Debug\netcoreapp3.1\WebComputos.Utilerias.AssemblyInfo.cs
+D:\Desktop\26Medianoche\WebComputos\WebComputos.Utilerias\obj\Debug\netcoreapp3.1\WebComputos.Utilerias.dll
+D:\Desktop\26Medianoche\WebComputos\WebComputos.Utilerias\obj\Debug\netcoreapp3.1\WebComputos.Utilerias.pdb

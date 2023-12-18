@@ -1,0 +1,50 @@
+﻿@model WebComputos.Models.ViewModels.CoalicionDetVM
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Create</h1>
+<br />
+<br />
+<br />
+<h3 class="text-center">Crear CoalicionDet</h3>
+<form method="post" asp-action="Create">
+    <div class="row px-2 mx-2 border">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="col-10 offset-1 mt-4">
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="Coalicion.Coalicion"></label>
+                </div>
+                <div class="col-8">
+                    @Html.DropDownListFor(m => m.Coalicion.Coalicion, Model.LCoalicion,
+                       "-Por favor seleccione una coalición-", new { @class = "form-control" })
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="Coalicion.Partido"></label>
+                </div>
+                <div class="col-8">
+                    @Html.DropDownListFor(m => m.Coalicion.Partido, Model.LPartido,
+                       "-Por favor seleccione un partido-", new { @class = "form-control" })
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="Coalicion.Activo"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="Coalicion.Activo" class="form-check" />
+                    <span asp-validation-for="Coalicion.Activo" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-8 offset-4">
+                    <partial name="_GuardarVolver" />
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

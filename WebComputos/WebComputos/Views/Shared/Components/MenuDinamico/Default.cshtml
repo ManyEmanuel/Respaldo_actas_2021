@@ -1,0 +1,20 @@
+﻿@model WebComputos.Models.ViewModels.MenuDinamicoVM
+@if (Model.LDemarcaciones.Count() > 0)
+{
+    <li class="dropdown-submenu">
+        <a class="dropdown-item dropdown-toggle" href="#">Regidores</a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            @foreach (var item in Model.LDemarcaciones)
+            {
+                var secciones = Model.Lsecciones.Where(x => x.Demarcacion == item.idDemarcacion).ToList();
+                if (secciones.Count > 0)
+                {
+
+                }
+            <li><a class="dropdown-item" asp-area="Admin" asp-controller="TRecepcionPaquetes" asp-action="CausalesReg" asp-route-id="@item.idDemarcacion">@item.Nombre</a></li>
+
+
+            }
+        </ul>
+    </li>
+ }

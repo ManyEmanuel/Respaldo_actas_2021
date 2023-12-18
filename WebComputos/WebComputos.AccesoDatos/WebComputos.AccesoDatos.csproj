@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200302195234_MigracionInicialCatalagos.cs" />
+    <Compile Remove="Migrations\20200302195234_MigracionInicialCatalagos.Designer.cs" />
+    <Compile Remove="Migrations\20200302195934_MigracionInicialCatalagos.cs" />
+    <Compile Remove="Migrations\20200302195934_MigracionInicialCatalagos.Designer.cs" />
+    <Compile Remove="Migrations\20200303213853_actualizacion.cs" />
+    <Compile Remove="Migrations\20200303213853_actualizacion.Designer.cs" />
+    <Compile Remove="Migrations\20200303214547_Demarcacionpte1.cs" />
+    <Compile Remove="Migrations\20200303214547_Demarcacionpte1.Designer.cs" />
+    <Compile Remove="Migrations\20200310161649_Migracion2dopizarron.cs" />
+    <Compile Remove="Migrations\20200310161649_Migracion2dopizarron.Designer.cs" />
+    <Compile Remove="Migrations\20200310162430_migracion2.cs" />
+    <Compile Remove="Migrations\20200310162430_migracion2.Designer.cs" />
+    <Compile Remove="Migrations\20200310163047_Migracion-Completa.cs" />
+    <Compile Remove="Migrations\20200310163047_Migracion-Completa.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\Inicializador\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.4" />
+    <PackageReference Include="Microsoft.Extensions.Identity.Stores" Version="3.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WebComputos.Models\WebComputos.Models.csproj" />
+    <ProjectReference Include="..\WebComputos.Utilerias\WebComputos.Utilerias.csproj" />
+  </ItemGroup>
+
+</Project>

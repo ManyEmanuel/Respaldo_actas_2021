@@ -1,0 +1,28 @@
+﻿@model WebComputos.Models.TDistrito
+@{
+    ViewData["Title"] = "Detalles";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br />
+<br />
+
+<div class="row">
+    <div class="col-12 bg-white" >
+        <div class="card border">
+            <div class="card-header">
+                <h3><strong>Detalle de distrito</strong></h3>
+            </div>
+        </div>
+        <div class="card-body bg-transparent">
+            <ul class="list-group">
+                <li class="list-group-item"><strong>Nombre distrito:</strong>@Html.DisplayFor(m => m.Nombre)</li>
+                <li class="list-group-item"><strong>No.Distrito:</strong>@Html.DisplayFor(m => m.NoDistrito)</li>
+                <li class="list-group-item"><strong>Integración:</strong>@Html.DisplayFor(m => m.Integracion)</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div>
+    <a asp-action="Index">Volver a lista</a>
+</div>
+

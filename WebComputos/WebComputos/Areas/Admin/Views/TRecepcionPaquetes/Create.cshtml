@@ -1,0 +1,186 @@
+﻿
+@model WebComputos.Models.ViewModels.RegPaqueteVM
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br />
+<br />
+<br />
+<h3 class="text-center">Registrar paquete electoral</h3>
+<form method="post" asp-action="Create">
+    <div class="row px-2 mx-2 border">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="col-10 offset-1 mt-4">
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="Seccion">Sección:</label>
+                </div>
+                <div class="col-4">
+                    @Html.DropDownListFor(m=> m.LSeccionPaq, Model.LSeccionPaq,
+                    "-Seleccione una sección-", new { @class = "form-control", @id= "Seccion" })
+                </div>
+                <div class="col-2">
+                    <label for="casid">Casilla:</label>
+                </div>
+                <div class="col-4">
+                    <select id="casid" name="casid" asp-items='@(new SelectList(string.Empty,"value","text"))' class="form-control"></select>
+                    <span asp-validation-for="RecPaquetes.IdCasillaDet" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <input type="hidden" asp-for="RecPaquetes.IdCasillaDet" id="idcas" class="form-control" />
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="RecPaquetes.Hora"></label>
+                </div>
+                <div class="col-4">
+                    <input type="time" asp-for="RecPaquetes.Hora" class="form-control" />
+                    <span asp-validation-for="RecPaquetes.Hora" class="text-danger"></span>
+                </div>
+                <div class="col-2">
+                    <label asp-for="RecPaquetes.Fecha"></label>
+                </div>
+                <div class="col-4">
+                    <input type="date" id="fini" asp-for="RecPaquetes.Fecha" class="form-control" />
+                    <span asp-validation-for="RecPaquetes.Fecha" class="text-danger"></span>
+                </div>
+            </div>
+            <br />
+            <br />
+            <!-- Hora y Fecha del sistema -->
+            <div class="form-group">
+                <input id="Horsis" type="hidden" asp-for="RecPaquetes.HoraReg" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input id="Fecsis" type="hidden" asp-for="RecPaquetes.FechaReg" class="form-control" />
+            </div>
+            <!-- --------------------------------------------------------------------------------------- -->
+            <div class="form-group row">
+                <div class="col-5">
+                    <label asp-for="RecPaquetes.Entrega" class="control-label"></label>
+                </div>
+                <div class=" col-7">
+                    <input asp-for="RecPaquetes.Entrega" class="form-control" />
+                    <span asp-validation-for="RecPaquetes.Entrega" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-5">
+                    <label asp-for="RecPaquetes.Cargo" class="control-label"></label>
+                </div>
+                <div class="col-7">
+                    <input asp-for="RecPaquetes.Cargo" class="form-control" />
+                    <span asp-validation-for="RecPaquetes.Cargo" class="text-danger"></span>
+                </div>
+            </div>
+            <br />
+            <br />
+
+            <!-- Check de observaciones -->
+            <div class="form-group row">
+                <label class="control-label">El paquete electoral se entregó: (Seleccione las condiciones del paquete al recibirlo)</label>
+            </div>
+            <div class="form-group row">
+                <div class="col-6">
+                    <input type="radio" id="obs1" name="obs" value="1" class="form-check-input" />
+                    <label for="obs1" class="form-check-label"> Sin muestras de alteración, firmado y con cinta de seguridad</label>
+                </div>
+                <div class="col-6">
+                    <input type="radio" id="obs4" name="obs" value="4" class="form-check-input" />
+                    <label for="obs4" class="form-check-label">Sin muestras de alteración y sin firmas</label>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-6">
+                    <input type="radio" id="obs2" name="obs" value="2" class="form-check-input" />
+                    <label for="obs2" class="form-check-label"> Sin muestras de alteración, firmado y sin cinta de seguridad</label>
+                </div>
+                <div class="col-6">
+                    <input type="radio" id="obs5" name="obs" value="5" class="form-check-input" />
+                    <label for="obs5" class="form-check-label"> Con muestras de alteración y sin firmas</label>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-6">
+                    <input type="radio" id="obs3" name="obs" value="3" class="form-check-input" />
+                    <label for="obs3" class="form-check-label"> Con muestras de alteración y firmado</label>
+                </div>
+            </div>
+            <br />
+            <br />
+            <div class="form-group">
+                <input id="Resob" type="hidden" asp-for="RecPaquetes.Observaciones" class="form-control" />
+            </div>
+            <!-- ---------------------------------------------------------------------------------------- -->
+            <!-- Check de Sobre y Paquete PREP -->
+            <div class="form-group row">
+                <div class="col-6">
+                    <label class="control-label">Por fuera del paquete electoral se recibieron: </label>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-6">
+                    <label class="control-label">Un sobre para el PREP </label>
+                </div>
+                <div class="col-6">
+                    <label class="control-label">Una bolsa que va por fuera del paquete electoral para el consejo municipal </label>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <input id="Sobre1" type="radio" name="Sobre" value="1" />
+                    <label for="Sobre1" class="form-check-label"> Si</label>
+                </div>
+                <div class="col-4">
+                    <input id="Sobre2" type="radio" name="Sobre" value="0" />
+                    <label for="Sobre2" class="form-check-label"> No</label>
+                </div>
+                <div class="col-2">
+                    <input id="Paq1" type="radio" name="Paquete" value="1" />
+                    <label for="Paq1" class="form-check-label"> Si</label>
+                </div>
+                <div class="col-4">
+                    <input id="Paq2" type="radio" name="Paquete" value="0" />
+                    <label for="Paq2" class="form-check-label"> No</label>
+                </div>
+            </div>
+            <!--<div class="form-group row">
+            <div class="col-6">
+                <label class="control-label">Que dice contener copia de las Actas de Escrutinio y Cómputo de la Elección de Diputados/ </label>
+            </div>
+            <div class="col-6">
+                <label class="control-label"> </label>
+            </div>
+            </div> -->
+
+            <div class="form-group">
+                <input type="hidden" id="sobrePrep" asp-for="RecPaquetes.SobrePrep" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <input type="hidden" id="PaqPrep" asp-for="RecPaquetes.PaqueteElec" class="form-control" />
+            </div>
+            <!-- ----------------------------------------------------------------------------------------- -->
+            <!-- Campos Invisibles -->
+            
+            <div class="form-group">
+                <input type="hidden"  id="pasar" name="Pasar"  class="form-control" />
+                
+            </div>
+            <div class="form-group row">
+                <div class="col-8 offset-4">
+                    <partial name="_GuardarVolver" />
+                </div>
+            </div>
+        </div> 
+    </div>
+</form>
+
+
+@section Scripts
+{
+    <script src="~/js/Recepcion.js"></script>
+}
